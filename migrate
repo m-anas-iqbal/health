@@ -1,0 +1,21 @@
+php artisan migrate:reset
+php artisan migrate:rollback --step 3
+php artisan migrate:refresh
+php artisan migrate
+
+Specific table ke liye use hota hai.
+php artisan migrate --path=/database/migrations/migration_ke_table_ka_name_hoga
+
+reset means all migration hatana
+rollback means specific file remove migration
+rollback me if set define nhi karte hai to last wali migration file ko remove kar ga.
+
+
+php artisan migrate:reset
+
+
+
+doctor_types.blade.php
+course_forms.blade.php
+hospitals.blade.php
+patients.blade.php
